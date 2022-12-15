@@ -6,7 +6,7 @@
 }
 
 :root {
-    --tt-main-bg-color: #0a0a0a;
+    --tt-main-bg-color: #363333;
     /* Change the template background color here. */
     --tt-main-color: #b12c0d;
     /* Change the template main color here. */
@@ -33,9 +33,12 @@ li {
 a {
     color: currentColor;
     text-decoration: none;
-    outline: none
+    outline: none;
 }
+a,p,span{
+    color: #fff;
 
+}
 a:hover,
 a:focus {
     color: currentColor;
@@ -458,7 +461,102 @@ body:not(.tt-boxed) .page-header-inner,
 
 /* skills */
 
+/* -------------------------------- */
+/* projects */
+/* .swiper-slide{
+    width: 300px;
+    height: 300px;
+} */
+.swiper-pagination{
+    bottom: -10px!important;
+}
+.swiper-pagination-bullet{
+    background-color: #fff!important;
+}
 
+
+.popup-project{
+	display:inline-block;
+	position:relative;
+}
+
+
+
+.popup-project img {
+	position:relative;
+	z-index:10;
+	width: 100%;
+	height: auto;
+    border-radius: 8px 8px !important;
+}
+.popup-project:hover .portfolio-link {
+    display: inline-block;
+}
+.popup-project:hover img {
+	opacity: 0.25;
+    border-radius: 5px 5px 0 0;
+}
+
+.portfolio-link{
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 12;
+    /* background-color: #000; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+   
+}
+
+.portfolio-link .eye-wrapper{
+    margin: 25px;
+}
+.popup-project:hover span{
+	opacity: 1;
+}
+
+.popup-project img,
+.popup-project span {
+	
+	transition: all 0.25s ease-in-out;
+}
+.project-desc{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.project-desc .pr-title{
+    font-family: 'Syne',sans-serif;
+    letter-spacing: 4px;
+    margin-top: 18px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.project-desc .pr-skills{
+    font-weight: italic;
+}
+.project-card{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.project-card img{
+	border-radius: 5px 5px 5px 5px !important;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.portfolio-pic{
+	display: block;
+	margin-bottom: 10px;
+    height: 350px;
+}
+
+
+/* projects */
 
 /* footer */
 /* 8. Footer */
@@ -469,6 +567,7 @@ footer {
     align-items: center;
     /* color: #fff; */
     padding: 50px 0;
+    margin-top: 100px;
 
 }
 
